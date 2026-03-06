@@ -2,26 +2,36 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Zombie Apocalypse</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Zombie Apocalypse</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="game-container">
+<div class="game-container">
 
-        <h1 class="title">🧟 Zombie Apocalypse</h1>
+<h1 class="title">🧟 Zombie Apocalypse</h1>
 
-        <div id="score">Score: 0</div>
+<div class="hud">
+<span id="score">Score: 0</span>
+<span id="level">Level: 1</span>
+<span id="health">❤️ 3</span>
+</div>
 
-        <canvas id="gameCanvas" width="800" height="500"></canvas>
+<canvas id="gameCanvas" width="800" height="500"></canvas>
 
-        <button onclick="startGame()">Start Game</button>
+<div id="gameOverScreen" class="game-over hidden">
+<h2>Game Over</h2>
+<p id="finalScore"></p>
+<button onclick="restartGame()">Restart</button>
+</div>
 
-    </div>
+<button id="startBtn" onclick="startGame()">Start Game</button>
 
-    <script src="script.js"></script>
+</div>
+
+<script src="game.js"></script>
 
 </body>
 </html>
