@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Zombie Escape</title>
+    <meta charset="UTF-8">
+    <title>Zombie Apocalypse</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1 class="title">🧟 Zombie Escape</h1>
+    <div class="game-container">
 
-<div class="game-info">
-    Score: <span id="score">0</span>
-</div>
+        <h1 class="title">🧟 Zombie Apocalypse</h1>
 
-<canvas id="gameCanvas" width="800" height="500"></canvas>
+        <div id="score">Score: 0</div>
 
-<div id="gameOver" class="hidden">
-    <h2>Game Over</h2>
-    <button onclick="restartGame()">Restart</button>
-</div>
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
 
-<script src="game.js"></script>
+        <button onclick="startGame()">Start Game</button>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
